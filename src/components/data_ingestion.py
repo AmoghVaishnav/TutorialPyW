@@ -1,7 +1,7 @@
 import os 
 import sys
 from typing import Any
-from src.exception import Customexception
+from src.exception import CustomException
 from src.logger import logging
 import pandas as pd 
 
@@ -19,7 +19,7 @@ class DataIngestion:
         self.ingestion_config=DataIngestionConfig()
 
     def initiate_data_ingestion(self):
-        logging.info("Enetred the data ingestion method")
+        logging.info("Entered the data ingestion method")
         try:
             df=pd.read_csv('TutorialPyW\ingestion\stud.csvv')
             logging.info("Data read successfully as dataframe")
