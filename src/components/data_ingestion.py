@@ -21,7 +21,7 @@ class DataIngestion:
     def initiate_data_ingestion(self):
         logging.info("Enetred the data ingestion method")
         try:
-            df=pd.read_csv('TutorialPyW\ingestion\stud.csv')
+            df=pd.read_csv('TutorialPyW\ingestion\stud.csvv')
             logging.info("Data read successfully as dataframe")
 
             os.makedirs(os.path.dirname(self.ingestion_config.train_data_path),exist_ok=True)
